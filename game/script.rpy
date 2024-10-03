@@ -50,3 +50,5 @@ label cut_scene:
     pause 14
     stop movie
     return
+label coba_coba:
+    return
