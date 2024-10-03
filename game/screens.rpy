@@ -294,17 +294,35 @@ screen navigation():
         if main_menu:
             
             imagebutton:
-                idle im.Scale("images/start_button_idle.png",801*0.6, 161*0.6)
-                hover im.Scale("images/start_button_hover.png",801*0.7, 161*0.7)
+                idle "images/Buttons/Continue.png" 
+                hover "images/Buttons/Continue.png" at button_effect
                 ypos 600
                 action Start()
         else:        
             imagebutton:
-                idle im.Scale("images/check_backpack_idle.png",801*0.6, 161*0.6)
-                hover im.Scale("images/check_backpack_hover.png",801*0.7, 161*0.7)
-                ypos 600
+                idle "images/Buttons/Continue.png"
+                hover "images/Buttons/Continue.png"at button_effect
+                ypos 200
+                
+                action Continue()
+            imagebutton:
+                idle "images/Buttons/main_menu.png"
+                hover "images/Buttons/main_menu.png" at button_effect
+                ypos 400
                 
                 action MainMenu()
+            imagebutton:
+                idle "images/Buttons/preference.png"
+                hover "images/Buttons/preference.pngpng" at button_effect
+                ypos 600
+                
+                action ShowMenu("preferences")
+            imagebutton:
+                idle "images/Buttons/check_my_backpack.png"
+                hover "images/Buttons/check_my_backpack.png" at button_effect
+                ypos 800
+                
+                action [ToggleVariable("state_"), ToggleVariable("sate")]
 
 """
         xpos gui.navigation_xpos
@@ -366,7 +384,7 @@ style navigation_button_text:
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
 
 screen main_menu():
-
+    
     ## This ensures that any other menu screen is replaced.
     tag menu
 
@@ -375,11 +393,13 @@ screen main_menu():
     ## This empty frame darkens the main menu.
     frame:
         style "main_menu_frame"
-    default button_state = False
+    
     
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
     use navigation
+    use backpack
+    use backpack_item
     if gui.show_name:
         pass
 
@@ -631,72 +651,6 @@ screen file_slots(title):
                 input:
                     style "page_label_text"
                     value page_name_value
-
-            ## The grid of file slots.
-            grid gui.file_slot_cols gui.file_slot_rows:
-                style_prefix "slot"
-
-                xalign 0.5
-                yalign 0.5
-
-                spacing gui.slot_spacing
-
-                for i in range(gui.file_slot_cols * gui.file_slot_rows):
-
-                    $ slot = i + 1
-
-                    button:
-                        action FileAction(slot)
-
-                        has vbox
-
-                        add FileScreenshot(slot) xalign 0.5
-
-                        text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
-                            style "slot_time_text"
-
-                        text FileSaveName(slot):
-                            style "slot_name_text"
-
-                        key "save_delete" action FileDelete(slot)
-
-            ## Buttons to access other pages.
-            vbox:
-                style_prefix "page"
-
-                xalign 0.5
-                yalign 1.0
-
-                hbox:
-                    xalign 0.5
-
-                    spacing gui.page_spacing
-
-                    textbutton _("<") action FilePagePrevious()
-                    key "save_page_prev" action FilePagePrevious()
-
-                    if config.has_autosave:
-                        textbutton _("{#auto_page}A") action FilePage("auto")
-
-                    if config.has_quicksave:
-                        textbutton _("{#quick_page}Q") action FilePage("quick")
-
-                    ## range(1, 10) gives the numbers from 1 to 9.
-                    for page in range(1, 10):
-                        textbutton "[page]" action FilePage(page)
-
-                    textbutton _(">") action FilePageNext()
-                    key "save_page_next" action FilePageNext()
-
-                if config.has_sync:
-                    if CurrentScreenName() == "save":
-                        textbutton _("Upload Sync"):
-                            action UploadSync()
-                            xalign 0.5
-                    else:
-                        textbutton _("Download Sync"):
-                            action DownloadSync()
-                            xalign 0.5
 
 
 style page_label is gui_label
