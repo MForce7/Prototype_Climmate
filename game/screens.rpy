@@ -286,10 +286,27 @@ style quick_button_text:
 ## to other menus, and to start the game.
 
 screen navigation():
-
+    
     vbox:
+        xalign 0.5
         style_prefix "navigation"
+        
+        if main_menu:
+            
+            imagebutton:
+                idle im.Scale("images/start_button_idle.png",801*0.6, 161*0.6)
+                hover im.Scale("images/start_button_hover.png",801*0.7, 161*0.7)
+                ypos 600
+                action Start()
+        else:        
+            imagebutton:
+                idle im.Scale("images/check_backpack_idle.png",801*0.6, 161*0.6)
+                hover im.Scale("images/check_backpack_hover.png",801*0.7, 161*0.7)
+                ypos 600
+                
+                action MainMenu()
 
+"""
         xpos gui.navigation_xpos
         yalign 0.5
 
@@ -330,7 +347,7 @@ screen navigation():
             ## Web.
             textbutton _("Quit") action Quit(confirm=not main_menu)
 
-
+"""
 style navigation_button is gui_button
 style navigation_button_text is gui_button_text
 
@@ -358,28 +375,22 @@ screen main_menu():
     ## This empty frame darkens the main menu.
     frame:
         style "main_menu_frame"
-
+    default button_state = False
+    
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
     use navigation
-
     if gui.show_name:
+        pass
 
-        vbox:
-            style "main_menu_vbox"
-
-            text "[config.name!t]":
-                style "main_menu_title"
-
-            text "[config.version]":
-                style "main_menu_version"
-
-
+style main_menu_title is main_menu_text
 style main_menu_frame is empty
 style main_menu_vbox is vbox
 style main_menu_text is gui_text
-style main_menu_title is main_menu_text
 style main_menu_version is main_menu_text
+
+"""
+
 
 style main_menu_frame:
     xsize 420
@@ -403,7 +414,7 @@ style main_menu_title:
 style main_menu_version:
     properties gui.text_properties("version")
 
-
+"""
 ## Game Menu screen ############################################################
 ##
 ## This lays out the basic common structure of a game menu screen. It's called

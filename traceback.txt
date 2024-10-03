@@ -1,0 +1,32 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+After initialization, but before game start.
+  File "game/screens.rpy", line 368, in prepare_screen
+    screen main_menu():
+  File "game/screens.rpy", line 368, in prepare
+    screen main_menu():
+Exception: A screen named backpack does not exist.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "E:\Renpy\renpy-8.3.2-sdk\renpy\bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "E:\Renpy\renpy-8.3.2-sdk\renpy\main.py", line 652, in main
+    run(restart)
+  File "E:\Renpy\renpy-8.3.2-sdk\renpy\main.py", line 94, in run
+    renpy.display.screen.prepare_screens()
+  File "E:\Renpy\renpy-8.3.2-sdk\renpy\display\screen.py", line 1026, in prepare_screens
+    s.ast.prepare_screen()
+  File "game/screens.rpy", line 368, in prepare_screen
+    screen main_menu():
+  File "game/screens.rpy", line 368, in prepare
+    screen main_menu():
+  File "E:\Renpy\renpy-8.3.2-sdk\renpy\sl2\slast.py", line 2030, in prepare
+    raise Exception("A screen named {} does not exist.".format(self.target))
+Exception: A screen named backpack does not exist.
+
+Windows-10-10.0.19045 AMD64
+Ren'Py 8.3.2.24090902
+Prototype_Climmate 1.0
+Thu Oct  3 12:35:32 2024

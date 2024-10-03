@@ -1,36 +1,37 @@
-2024-10-03 05:26:53 UTC
+2024-10-03 05:36:05 UTC
 Windows-10-10.0.19045
 Ren'Py 8.3.2.24090902
 
-Early init took 0.47s
-Loading error handling took 0.24s
-Loading script took 5.49s
-Loading save slot metadata took 0.10s
+Early init took 0.32s
+Loading error handling took 0.11s
+Loading script took 1.31s
+Loading save slot metadata took 0.11s
 Loading persistent took 0.00s
-Running init code took 0.37s
-Loading analysis data took 0.08s
+Running init code took 0.22s
+Loading analysis data took 0.05s
 Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.05s
+Reloading save slot metadata took 0.06s
 Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Aftani\\AppData\\Roaming/RenPy/backups\\Prototype_Climmate':
 Dump and make backups took 0.29s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.10s
+Initial gc took 0.21s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.01s
 Cleaning stores took 0.00s
-Init translation took 0.11s
-Build styles took 0.02s
-Load screen analysis took 0.13s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.30s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.10s
+Init translation took 0.13s
+Build styles took 0.03s
+Load screen analysis took 0.00s
+Analyze screens took 0.11s
+Save screen analysis took 0.10s
+Prepare screens took 0.39s
+Save pyanalysis. took 0.04s
+Save bytecode. took 0.06s
 Running _start took 0.00s
-Interface start took 0.25s
+Interface start took 0.33s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1366, 768)
