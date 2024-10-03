@@ -1,0 +1,47 @@
+default status = True
+transform button_menu_s:
+    xanchor 0.5
+    yanchor 0.5
+    on hover:
+        zoom 2.0
+        ease 0.15 zoom 2.2
+    on idle:
+        ease 0.15 zoom 2.0
+transform button_menu:
+    xanchor 0.5
+    yanchor 0.5
+    on hover:
+        zoom 1.0
+        ease 0.15 zoom 1.1
+    on idle:
+        ease 0.15 zoom 1.0
+screen backpack:
+    if main_menu:
+        imagebutton:
+            xalign 0.95
+            yalign 0.9
+            
+            idle  "backpack/backpack.png"
+            hover "backpack/backpack.png"at button_menu_s
+            action [Show("backpack_item"), Hide("backpack")]
+
+screen backpack_item:
+    if main_menu:
+        add "backpack/plate.png" xalign 0.5 yalign 0.5
+        imagebutton:
+            xalign 0.5
+            yalign 0.5
+            idle  "backpack/icon.png"
+            hover "backpack/icon.png" at button_menu
+            action NullAction()  
+        imagebutton:
+            xalign 0.073
+            yalign 0.89
+            idle  "backpack/back_icon.png"
+            hover "backpack/back_icon.png" at button_menu
+            action [Hide("backpack_item"), Show("backpack")]
+
+
+    
+
+    
