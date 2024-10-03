@@ -27,7 +27,14 @@ label start:
     e "You've created a new Ren'Py game."
 
     e "Once you add a story, pictures, and music, you can release it to the world!"
+    call cut_scene
 
     # This ends the game.
 
+    return
+label cut_scene:
+    play movie "Scene-kawai-elaina.webm"
+    $ renpy.pause(14, hard=True)
+    pause 14
+    stop movie
     return
