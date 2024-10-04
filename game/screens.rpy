@@ -3,7 +3,8 @@
 ################################################################################
 
 init offset = -1
-
+#variable toggle
+default show_game_menu = True
 
 ################################################################################
 ## Styles
@@ -251,13 +252,13 @@ screen quick_menu():
             yalign 1.0
 
             textbutton _("Back") action Rollback()
-            textbutton _("History") action ShowMenu('history')
-            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Save") action ShowMenu('save')
-            textbutton _("Q.Save") action QuickSave()
-            textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences')
+            # textbutton _("History") action ShowMenu('history')
+            # textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
+            # textbutton _("Auto") action Preference("auto-forward", "toggle")
+            # textbutton _("Save") action ShowMenu('save')
+            # textbutton _("Q.Save") action QuickSave()
+            # textbutton _("Q.Load") action QuickLoad()
+            # textbutton _("Prefs") action ShowMenu('preferences')
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -295,13 +296,13 @@ screen navigation():
             hover "images/Buttons/menu_button_5.png" at button_effect
             ypos 600 xalign 0.5
             action Start()
-    else:        
+    elif show_game_menu == True and state_ == True:       
         imagebutton:
             idle "images/Buttons/menu_button_1.png"
             hover "images/Buttons/menu_button_1.png"at button_effect
             xalign 0.5 ypos 150
             
-            action Continue()
+            action Continue(confirm=False)
         imagebutton:
             idle "images/Buttons/menu_button_2.png"
             hover "images/Buttons/menu_button_2.png" at button_effect
@@ -312,14 +313,13 @@ screen navigation():
             idle "images/Buttons/menu_button_3.png"
             hover "images/Buttons/menu_button_3.png" at button_effect
             xalign 0.5 ypos 550
-            
-            action ShowMenu("preferences")
+            action [ShowMenu("preferences"), ToggleVariable("show_game_menu")]
         imagebutton:
             idle "images/Buttons/menu_button_4.png"
             hover "images/Buttons/menu_button_4.png" at button_effect
             xalign 0.5 ypos 750
             
-            action [ToggleVariable("state_"), ToggleVariable("sate")]
+            action [ShowMenu("backpack_item"), ToggleVariable("state_"), ToggleVariable("sate")]
 
 
 """
@@ -501,11 +501,11 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
                     transclude
 
     use navigation
+    if show_game_menu == False:
+        textbutton _("Return"):
+            style "return_button"
 
-    textbutton _("Return"):
-        style "return_button"
-
-        action Return()
+            action [Return(), ToggleVariable("show_game_menu")]
 
     
 
@@ -696,12 +696,12 @@ screen preferences():
                         textbutton _("Window") action Preference("display", "window")
                         textbutton _("Fullscreen") action Preference("display", "fullscreen")
 
-                vbox:
-                    style_prefix "check"
-                    label _("Skip")
-                    textbutton _("Unseen Text") action Preference("skip", "toggle")
-                    textbutton _("After Choices") action Preference("after choices", "toggle")
-                    textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
+                # vbox:
+                #     style_prefix "check"
+                #     label _("Skip")
+                #     textbutton _("Unseen Text") action Preference("skip", "toggle")
+                #     textbutton _("After Choices") action Preference("after choices", "toggle")
+                #     textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
 
                 ## Additional vboxes of type "radio_pref" or "check_pref" can be
                 ## added here, to add additional creator-defined preferences.
