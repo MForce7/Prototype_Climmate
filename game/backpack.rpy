@@ -17,13 +17,14 @@ transform button_menu_s_:
 transform button_menu:
     xanchor 0.5
     yanchor 0.5
+    zoom 0.0 
+    pause 0.25
+    ease 0.25 zoom 1.0 
     on hover:
         pause 0.5
         zoom 1.0
 
     on idle:
-         
-
         pause 0.5
         zoom 1.0
 
@@ -70,8 +71,9 @@ screen backpack_item:
         imagebutton:
             xalign 0.073
             yalign 0.89
+            
             idle  "backpack/back_icon.png"
-            hover "backpack/back_icon.png" at button_menu
+            hover "backpack/back_icon.png" at button_menu 
             action [ToggleVariable("state_"), ToggleVariable("sate")]
     if sate == True and state_ == False  or sate == False and state_ == True:
         add "backpack/plate.png" xalign 0.5 yalign 0.5 at smalling

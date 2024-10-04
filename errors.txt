@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 292: expected statement.
-    state2_ = True
-            ^
+File "game/backpack.rpy", line 71: 'zoom' is not a keyword argument or valid child of the imagebutton statement.
+    zoom 0.0 
+        ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Fri Oct  4 05:10:51 2024
+Fri Oct  4 09:18:39 2024
