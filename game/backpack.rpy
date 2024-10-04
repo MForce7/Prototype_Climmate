@@ -53,18 +53,110 @@ screen backpack:
         add "backpack/backpack.png" at button_menu_s_
         
 
+image content_icon:
+    "backpack/icon_item.png"
+    xanchor 0
+    yanchor 0
+    zoom 1.5
+    
 
 
 screen backpack_item:
-    
+    style_prefix "itemUi"
     if state_ == False:
         add "backpack/plate.png" xalign 0.5 yalign 0.5 at bigging
-        imagebutton:
+        # conten isi back pack
+
+        # imagebutton:
+        #     xalign 0.1
+        #     yalign 0.1
+        #     idle  "backpack/icon.png"
+        #     hover "backpack/icon.png" at button_menu
+        #     action NullAction()  
+        frame :
+            background None
             xalign 0.5
             yalign 0.5
-            idle  "backpack/icon.png"
-            hover "backpack/icon.png" at button_menu
-            action NullAction()  
+            xoffset 100
+            yoffset 120
+            vbox spacing 70:
+                hbox spacing 70:
+                    vbox:
+
+                        imagebutton:
+                            # xalign 0.1
+                            # yalign 0.1
+                            idle  "content_icon"
+                            hover "content_icon" at button_menu
+                            action NullAction()
+                    imagebutton:
+                        # xalign 0.1
+                        # yalign 0.1
+                        idle  "content_icon"
+                        hover "content_icon" at button_menu
+                        action NullAction()  
+                    imagebutton:
+                        # xalign 0.1
+                        # yalign 0.1
+                        idle  "content_icon"
+                        hover "content_icon" at button_menu
+                        action NullAction()  
+                    imagebutton:
+                        # xalign 0.1
+                        # yalign 0.1
+                        idle  "content_icon"
+                        hover "content_icon" at button_menu
+                        action NullAction()  
+                hbox spacing 70:
+                    imagebutton:
+                        # xalign 0.1
+                        # yalign 0.1
+                        idle  "content_icon"
+                        hover "content_icon" at button_menu
+                        action NullAction()  
+                    imagebutton:
+                        # xalign 0.1
+                        # yalign 0.1
+                        idle  "content_icon"
+                        hover "content_icon" at button_menu
+                        action NullAction()  
+                    imagebutton:
+                        # xalign 0.1
+                        # yalign 0.1
+                        idle  "content_icon"
+                        hover "content_icon" at button_menu
+                        action NullAction()  
+                    imagebutton:
+                        # xalign 0.1
+                        # yalign 0.1
+                        idle  "content_icon"
+                        hover "content_icon" at button_menu
+                        action NullAction()  
+                hbox spacing 70:
+                    imagebutton:
+                        # xalign 0.1
+                        # yalign 0.1
+                        idle  "content_icon"
+                        hover "content_icon" at button_menu
+                        action NullAction()  
+                    imagebutton:
+                        # xalign 0.1
+                        # yalign 0.1
+                        idle  "content_icon"
+                        hover "content_icon" at button_menu
+                        action NullAction()  
+                    imagebutton:
+                        # xalign 0.1
+                        # yalign 0.1
+                        idle  "content_icon"
+                        hover "content_icon" at button_menu
+                        action NullAction()  
+        
+        
+        
+        
+        
+    
         imagebutton:
             xalign 0.073
             yalign 0.89
@@ -75,9 +167,15 @@ screen backpack_item:
     if sate == True and state_ == False  or sate == False and state_ == True:
         add "backpack/plate.png" xalign 0.5 yalign 0.5 at smalling
         add "backpack/back_icon.png" xalign 0.073 yalign 0.89 at dissapaer
+
         
 
 
     
+style itemUi_vbox:
+    yalign 0.5
+style itemUi_hbox:
+    xalign 0.5
+
 
     

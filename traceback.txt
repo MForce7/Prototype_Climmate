@@ -1,32 +1,88 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 After initialization, but before game start.
-  File "game/screens.rpy", line 597, in prepare_screen
-    screen save():
-  File "game/screens.rpy", line 597, in prepare
-    screen save():
-Exception: A screen named file_slots does not exist.
+  File "game/backpack.rpy", line 64, in prepare_screen
+    screen backpack_item:
+  File "game/backpack.rpy", line 64, in prepare
+    screen backpack_item:
+  File "game/backpack.rpy", line 66, in prepare
+    if state_ == False:
+  File "game/backpack.rpy", line 66, in prepare
+    if state_ == False:
+  File "game/backpack.rpy", line 76, in prepare
+    frame :
+  File "game/backpack.rpy", line 76, in prepare
+    frame :
+  File "game/backpack.rpy", line 77, in prepare
+    vbox spacing 70:
+  File "game/backpack.rpy", line 77, in prepare
+    vbox spacing 70:
+  File "game/backpack.rpy", line 78, in prepare
+    hbox spacing 70:
+  File "game/backpack.rpy", line 78, in prepare
+    hbox spacing 70:
+  File "game/backpack.rpy", line 79, in prepare
+    vbox:
+  File "game/backpack.rpy", line 79, in prepare
+    vbox:
+  File "game/backpack.rpy", line 81, in prepare
+    imagebutton:
+  File "game/backpack.rpy", line 81, in prepare
+    imagebutton:
+SyntaxError: positional argument follows keyword argument (game/backpack.rpy, line 86)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "E:\Renpy\renpy-8.3.2-sdk\renpy\bootstrap.py", line 359, in bootstrap
+  File "D:\renpy\renpy-8.3.2-sdk\renpy\bootstrap.py", line 359, in bootstrap
     renpy.main.main()
-  File "E:\Renpy\renpy-8.3.2-sdk\renpy\main.py", line 652, in main
+  File "D:\renpy\renpy-8.3.2-sdk\renpy\main.py", line 652, in main
     run(restart)
-  File "E:\Renpy\renpy-8.3.2-sdk\renpy\main.py", line 94, in run
+  File "D:\renpy\renpy-8.3.2-sdk\renpy\main.py", line 94, in run
     renpy.display.screen.prepare_screens()
-  File "E:\Renpy\renpy-8.3.2-sdk\renpy\display\screen.py", line 1026, in prepare_screens
+  File "D:\renpy\renpy-8.3.2-sdk\renpy\display\screen.py", line 1026, in prepare_screens
     s.ast.prepare_screen()
-  File "game/screens.rpy", line 597, in prepare_screen
-    screen save():
-  File "game/screens.rpy", line 597, in prepare
-    screen save():
-  File "E:\Renpy\renpy-8.3.2-sdk\renpy\sl2\slast.py", line 2030, in prepare
-    raise Exception("A screen named {} does not exist.".format(self.target))
-Exception: A screen named file_slots does not exist.
+  File "game/backpack.rpy", line 64, in prepare_screen
+    screen backpack_item:
+  File "game/backpack.rpy", line 64, in prepare
+    screen backpack_item:
+  File "game/backpack.rpy", line 66, in prepare
+    if state_ == False:
+  File "game/backpack.rpy", line 66, in prepare
+    if state_ == False:
+  File "game/backpack.rpy", line 76, in prepare
+    frame :
+  File "game/backpack.rpy", line 76, in prepare
+    frame :
+  File "game/backpack.rpy", line 77, in prepare
+    vbox spacing 70:
+  File "game/backpack.rpy", line 77, in prepare
+    vbox spacing 70:
+  File "game/backpack.rpy", line 78, in prepare
+    hbox spacing 70:
+  File "game/backpack.rpy", line 78, in prepare
+    hbox spacing 70:
+  File "game/backpack.rpy", line 79, in prepare
+    vbox:
+  File "game/backpack.rpy", line 79, in prepare
+    vbox:
+  File "game/backpack.rpy", line 81, in prepare
+    imagebutton:
+  File "game/backpack.rpy", line 81, in prepare
+    imagebutton:
+  File "D:\renpy\renpy-8.3.2-sdk\renpy\py3analysis.py", line 803, in ast_eval
+    return self.ast_eval_literal(expr)[0]
+  File "D:\renpy\renpy-8.3.2-sdk\renpy\py3analysis.py", line 785, in ast_eval_literal
+    expr = py_compile(expr, 'eval', ast_node=True)
+  File "D:\renpy\renpy-8.3.2-sdk\renpy\python.py", line 1144, in py_compile
+    raise e
+  File "D:\renpy\renpy-8.3.2-sdk\renpy\python.py", line 1081, in py_compile
+    raise orig_e
+  File "D:\renpy\renpy-8.3.2-sdk\renpy\python.py", line 1073, in py_compile
+    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
+SyntaxError: positional argument follows keyword argument (game/backpack.rpy, line 86)
 
-Windows-10-10.0.19045 AMD64
+Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.2.24090902
 Prototype_Climmate 1.0
-Fri Oct  4 05:36:56 2024
+Fri Oct  4 17:08:52 2024
