@@ -21,12 +21,9 @@ transform button_menu:
     pause 0.25
     ease 0.25 zoom 1.0 
     on hover:
-        pause 0.5
-        zoom 1.0
-
+        ease 0.25 zoom 1.2
     on idle:
-        pause 0.5
-        zoom 1.0
+        ease 0.25 zoom 1.0
 
 transform bigging:
     xanchor 0.5

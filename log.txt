@@ -1,68 +1,13 @@
-2024-10-04 02:12:42 UTC
+2024-10-04 02:26:16 UTC
 Windows-10-10.0.22631
 Ren'Py 8.3.2.24090902
 
 Early init took 0.09s
-Loading error handling took 0.04s
-Loading script took 0.89s
+Loading error handling took 0.03s
+Loading script took 0.26s
 Loading save slot metadata took 0.03s
 Loading persistent took 0.00s
-Running init code took 0.07s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.02s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Sayid Mahmud\\AppData\\Roaming/RenPy/backups\\Prototype_Climmate':
-Dump and make backups took 0.06s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.05s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.01s
-Cleaning stores took 0.00s
-Init translation took 0.04s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.06s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.09s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon (TM) Graphics'
-Version: b'4.6.0 Compatibility Profile Context 23.11.1.231017'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.04s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 201.59s
-Loading error handling took 0.03s
-Loading script took 0.15s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
+Running init code took 0.06s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.01s
 Reloading save slot metadata took 0.02s
@@ -71,7 +16,7 @@ Backing up script files to 'C:\\Users\\Sayid Mahmud\\AppData\\Roaming/RenPy/back
 Dump and make backups took 0.05s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.07s
+Initial gc took 0.04s
 DPI scale factor: 1.250000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
@@ -82,11 +27,11 @@ Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.02s
-Prepare screens took 0.06s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.01s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.03s
 Running _start took 0.00s
-Interface start took 0.09s
+Interface start took 0.10s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -101,367 +46,12 @@ Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 283.70s
+Early init took 37.18s
 Loading error handling took 0.02s
 Loading script took 0.14s
 Loading save slot metadata took 0.02s
 Loading persistent took 0.00s
-
-File "game/backpack.rpy", line 72: expected a keyword argument or end of line.
-    hover "backpack/back_icon.png" at zoom 0.0 pause 0.5 button_menu
-                                           ^
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon (TM) Graphics'
-Version: b'4.6.0 Compatibility Profile Context 23.11.1.231017'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 303.49s
-Loading error handling took 0.02s
-Loading script took 0.13s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-
-File "game/backpack.rpy", line 72: 'zoom' is not a keyword argument or valid child of the imagebutton statement.
-    hover "backpack/back_icon.png" at button_menu zoom 0.0 pause 0.5
-                                                      ^
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon (TM) Graphics'
-Version: b'4.6.0 Compatibility Profile Context 23.11.1.231017'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 306.66s
-Loading error handling took 0.02s
-Loading script took 0.13s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-
-File "game/backpack.rpy", line 72: 'zoom' is not a keyword argument or valid child of the imagebutton statement.
-    hover "backpack/back_icon.png" at button_menu zoom 0.0 pause 0.5
-                                                      ^
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 0.09s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon (TM) Graphics'
-Version: b'4.6.0 Compatibility Profile Context 23.11.1.231017'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 308.78s
-Loading error handling took 0.02s
-Loading script took 0.13s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-
-File "game/backpack.rpy", line 72: 'zoom' is not a keyword argument or valid child of the imagebutton statement.
-    hover "backpack/back_icon.png" at button_menu zoom 0.0 pause 0.5
-                                                      ^
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon (TM) Graphics'
-Version: b'4.6.0 Compatibility Profile Context 23.11.1.231017'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 309.49s
-Loading error handling took 0.02s
-Loading script took 0.13s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-
-File "game/backpack.rpy", line 72: 'zoom' is not a keyword argument or valid child of the imagebutton statement.
-    hover "backpack/back_icon.png" at button_menu zoom 0.0 pause 0.5
-                                                      ^
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon (TM) Graphics'
-Version: b'4.6.0 Compatibility Profile Context 23.11.1.231017'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 309.95s
-Loading error handling took 0.02s
-Loading script took 0.14s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-
-File "game/backpack.rpy", line 72: 'zoom' is not a keyword argument or valid child of the imagebutton statement.
-    hover "backpack/back_icon.png" at button_menu zoom 0.0 pause 0.5
-                                                      ^
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 0.11s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon (TM) Graphics'
-Version: b'4.6.0 Compatibility Profile Context 23.11.1.231017'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 329.72s
-Loading error handling took 0.02s
-Loading script took 0.13s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-
-File "game/backpack.rpy", line 72: 'zoom' is not a keyword argument or valid child of the imagebutton statement.
-    hover "backpack/back_icon.png" at button_menu zoom=0.0 pause=0.5
-                                                      ^
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon (TM) Graphics'
-Version: b'4.6.0 Compatibility Profile Context 23.11.1.231017'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1567, 881) drawable=(1567, 881)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 331.84s
-Loading error handling took 0.02s
-Loading script took 0.13s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-
-File "game/backpack.rpy", line 72: 'zoom' is not a keyword argument or valid child of the imagebutton statement.
-    hover "backpack/back_icon.png" at button_menu zoom=0.0 pause=0.5
-                                                      ^
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon (TM) Graphics'
-Version: b'4.6.0 Compatibility Profile Context 23.11.1.231017'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 332.88s
-Loading error handling took 0.02s
-Loading script took 0.12s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-
-File "game/backpack.rpy", line 72: 'zoom' is not a keyword argument or valid child of the imagebutton statement.
-    hover "backpack/back_icon.png" at button_menu zoom=0.0 pause=0.5
-                                                      ^
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon (TM) Graphics'
-Version: b'4.6.0 Compatibility Profile Context 23.11.1.231017'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 333.35s
-Loading error handling took 0.02s
-Loading script took 0.13s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-
-File "game/backpack.rpy", line 72: 'zoom' is not a keyword argument or valid child of the imagebutton statement.
-    hover "backpack/back_icon.png" at button_menu zoom=0.0 pause=0.5
-                                                      ^
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 0.09s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon (TM) Graphics'
-Version: b'4.6.0 Compatibility Profile Context 23.11.1.231017'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 354.70s
-Loading error handling took 0.02s
-Loading script took 0.15s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-
-File "game/backpack.rpy", line 71: 'zoom' is not a keyword argument or valid child of the imagebutton statement.
-    zoom 0.0 
-        ^
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 0.11s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon (TM) Graphics'
-Version: b'4.6.0 Compatibility Profile Context 23.11.1.231017'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 356.59s
-Loading error handling took 0.02s
-Loading script took 0.13s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-
-File "game/backpack.rpy", line 71: 'zoom' is not a keyword argument or valid child of the imagebutton statement.
-    zoom 0.0 
-        ^
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon (TM) Graphics'
-Version: b'4.6.0 Compatibility Profile Context 23.11.1.231017'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 357.17s
-Loading error handling took 0.02s
-Loading script took 0.14s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-
-File "game/backpack.rpy", line 71: 'zoom' is not a keyword argument or valid child of the imagebutton statement.
-    zoom 0.0 
-        ^
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 0.09s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon (TM) Graphics'
-Version: b'4.6.0 Compatibility Profile Context 23.11.1.231017'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 413.26s
-Loading error handling took 0.02s
-Loading script took 0.14s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.04s
+Running init code took 0.03s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.01s
 Reloading save slot metadata took 0.02s
@@ -479,13 +69,13 @@ Cleaning stores took 0.00s
 Init translation took 0.04s
 Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.02s
+Analyze screens took 0.01s
 Save screen analysis took 0.02s
 Prepare screens took 0.06s
 Save pyanalysis. took 0.02s
 Save bytecode. took 0.01s
 Running _start took 0.00s
-Interface start took 0.08s
+Interface start took 0.07s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -495,70 +85,26 @@ Vendor: "b'ATI Technologies Inc.'"
 Renderer: b'AMD Radeon (TM) Graphics'
 Version: b'4.6.0 Compatibility Profile Context 23.11.1.231017'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1567, 881) drawable=(1567, 881)
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
 Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 433.10s
+Early init took 61.52s
 Loading error handling took 0.02s
-Loading script took 0.15s
+Loading script took 0.14s
 Loading save slot metadata took 0.02s
 Loading persistent took 0.00s
 Running init code took 0.03s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.02s
+Reloading save slot metadata took 0.03s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\Sayid Mahmud\\AppData\\Roaming/RenPy/backups\\Prototype_Climmate':
 Dump and make backups took 0.05s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc took 0.07s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.06s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.08s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon (TM) Graphics'
-Version: b'4.6.0 Compatibility Profile Context 23.11.1.231017'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 451.44s
-Loading error handling took 0.02s
-Loading script took 0.15s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Sayid Mahmud\\AppData\\Roaming/RenPy/backups\\Prototype_Climmate':
-Dump and make backups took 0.05s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
 DPI scale factor: 1.250000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
@@ -588,9 +134,9 @@ Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 454.38s
+Early init took 64.66s
 Loading error handling took 0.02s
-Loading script took 0.15s
+Loading script took 0.14s
 Loading save slot metadata took 0.02s
 Loading persistent took 0.00s
 Running init code took 0.03s
@@ -607,49 +153,6 @@ nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.06s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-Interface start took 0.08s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon (TM) Graphics'
-Version: b'4.6.0 Compatibility Profile Context 23.11.1.231017'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 528.79s
-Loading error handling took 0.02s
-Loading script took 0.14s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Dump and make backups took 0.05s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.06s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
 Init translation took 0.04s
 Build styles took 0.00s
 Load screen analysis took 0.02s
@@ -659,183 +162,7 @@ Prepare screens took 0.06s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.00s
 Running _start took 0.00s
-Interface start took 0.09s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon (TM) Graphics'
-Version: b'4.6.0 Compatibility Profile Context 23.11.1.231017'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 621.28s
-Loading error handling took 0.02s
-Loading script took 0.15s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Sayid Mahmud\\AppData\\Roaming/RenPy/backups\\Prototype_Climmate':
-Dump and make backups took 0.05s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.06s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.06s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.09s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon (TM) Graphics'
-Version: b'4.6.0 Compatibility Profile Context 23.11.1.231017'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 630.54s
-Loading error handling took 0.02s
-Loading script took 0.14s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Sayid Mahmud\\AppData\\Roaming/RenPy/backups\\Prototype_Climmate':
-Dump and make backups took 0.05s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.07s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.01s
-Running _start took 0.00s
 Interface start took 0.08s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon (TM) Graphics'
-Version: b'4.6.0 Compatibility Profile Context 23.11.1.231017'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 652.85s
-Loading error handling took 0.02s
-Loading script took 0.15s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Sayid Mahmud\\AppData\\Roaming/RenPy/backups\\Prototype_Climmate':
-Dump and make backups took 0.05s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.06s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.04s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.06s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.08s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon (TM) Graphics'
-Version: b'4.6.0 Compatibility Profile Context 23.11.1.231017'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1051) drawable=(1920, 1051)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 674.34s
-Loading error handling took 0.02s
-Loading script took 0.14s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Sayid Mahmud\\AppData\\Roaming/RenPy/backups\\Prototype_Climmate':
-Dump and make backups took 0.05s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.06s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.04s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.07s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
