@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/backpack.rpy", line 172: keyword argument 'yanchor' is incompatible with 'yalign'.
-    image "backpack/mid_line.png" zoom 0.25 yalign 0.5 yanchor 0.5
-                                                              ^
+File "game/screens.rpy", line 319: reached end of line when expecting ':'.
+    elif about_page == True
+                           ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Sat Oct  5 01:22:03 2024
+Sat Oct  5 03:09:42 2024

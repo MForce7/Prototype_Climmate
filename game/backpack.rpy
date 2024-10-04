@@ -60,15 +60,15 @@ transform dissapaer:
 default state_= True
 default sate = True
 
-screen backpack:
-    if state_ == True:
-        imagebutton:
-            xalign 0.95
-            yalign 0.9
+# screen backpack:
+#     if state_ == True:
+#         imagebutton:
+#             xalign 0.95
+#             yalign 0.9
             
-            idle  "backpack/backpack.png"
-            hover "backpack/backpack.png"at button_menu_s
-            action [ToggleVariable("state_"), ToggleVariable("sate")]
+#             idle  "backpack/backpack.png"
+#             hover "backpack/backpack.png"at button_menu_s
+#             action [ToggleVariable("state_"), ToggleVariable("sate")]
     # else:
     #     add "backpack/backpack.png" at button_menu_s_
         
