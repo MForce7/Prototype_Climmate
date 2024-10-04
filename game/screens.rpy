@@ -286,63 +286,40 @@ style quick_button_text:
 ##
 ## This screen is included in the main and game menus, and provides navigation
 ## to other menus, and to start the game.
-default about_page = False
+
 screen navigation():
     
     if main_menu:
-        if about_page == False:
-            imagebutton:
-                idle "images/Buttons/menu_button_5.png" 
-                hover "images/Buttons/menu_button_5.png" at button_effect
-                ypos 560 xalign 0.5
-                action Start()
-            imagebutton:
-                idle "images/Buttons/continue_button.png" 
-                hover "images/Buttons/continue_button.png" at button_effect
-                ypos 725 xalign 0.5
-                action Continue()
-            imagebutton:
-                idle "images/Buttons/menu_button_4.png"
-                hover "images/Buttons/menu_button_4.png" at button_effect
-                xalign 0.5 ypos 890
-                action [ShowMenu("backpack_item"), ToggleVariable("state_"), ToggleVariable("sate")]
-            imagebutton:
-                idle "images/Buttons/exit_button.png"
-                hover "images/Buttons/exit_button.png" at button_effect
-                xalign 0.975 yalign 0.95
-                action Quit(confirm=True)
+        
         imagebutton:
-            idle "images/Buttons/about_button.png"
-            hover "images/Buttons/about_button.png" at button_effect
-            xalign 0.025 yalign 0.95
-            action [ShowMenu("about"), ToggleVariable("about_page")]
-       
+            idle "images/Buttons/menu_button_5.png" 
+            hover "images/Buttons/menu_button_5.png" at button_effect
+            ypos 600 xalign 0.5
+            action Start()
     elif show_game_menu == True and state_ == True:       
         imagebutton:
-            idle "images/Buttons/return_button.png"
-            hover "images/Buttons/return_button.png"at button_effect
-            xalign 0.5 ypos 155
-            action Return()
-        imagebutton:
-            idle "images/Buttons/save_journey_button.png"
-            hover "images/Buttons/save_journey_button.png"at button_effect
-            xalign 0.5 ypos 320
-            action QuickSave()
-        imagebutton:
-            idle "images/Buttons/menu_button_4.png"
-            hover "images/Buttons/menu_button_4.png" at button_effect
-            xalign 0.5 ypos 485
-            action [ShowMenu("backpack_item"), ToggleVariable("state_"), ToggleVariable("sate")]
-        imagebutton:
-            idle "images/Buttons/menu_button_3.png"
-            hover "images/Buttons/menu_button_3.png" at button_effect
-            xalign 0.5 ypos 650
-            action [ShowMenu("preferences"), ToggleVariable("show_game_menu")]
+            idle "images/Buttons/menu_button_1.png"
+            hover "images/Buttons/menu_button_1.png"at button_effect
+            xalign 0.5 ypos 150
+            
+            action Continue(confirm=False)
         imagebutton:
             idle "images/Buttons/menu_button_2.png"
             hover "images/Buttons/menu_button_2.png" at button_effect
-            xalign 0.5 ypos 815
+            xalign 0.5 ypos 350
+            
             action MainMenu()
+        imagebutton:
+            idle "images/Buttons/menu_button_3.png"
+            hover "images/Buttons/menu_button_3.png" at button_effect
+            xalign 0.5 ypos 550
+            action [ShowMenu("preferences"), ToggleVariable("show_game_menu")]
+        imagebutton:
+            idle "images/Buttons/menu_button_4.png"
+            hover "images/Buttons/menu_button_4.png" at button_effect
+            xalign 0.5 ypos 750
+            
+            action [ShowMenu("backpack_item"), ToggleVariable("state_"), ToggleVariable("sate")]
 
 
 """
@@ -419,7 +396,7 @@ screen main_menu():
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
     use navigation
-    # use backpack
+    use backpack
     use backpack_item
     if gui.show_name:
         pass
@@ -469,10 +446,8 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
 
     style_prefix "game_menu"
 
-    if main_menu and about_page == False:
+    if main_menu:
         add gui.main_menu_background
-    elif main_menu and about_page == True:
-        add "Background/BG-Home3.png"
     else:
         add gui.game_menu_background
 
@@ -590,17 +565,17 @@ screen about():
     use game_menu(_("About"), scroll="viewport"):
 
         style_prefix "about"
-        if about_page == True:
-            vbox:
 
-                label "[config.name!t]"
-                text _("Version [config.version!t]\n")
+        vbox:
 
-                ## gui.about is usually set in options.rpy.
-                if gui.about:
-                    text "[gui.about!t]\n"
+            label "[config.name!t]"
+            text _("Version [config.version!t]\n")
 
-                text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            ## gui.about is usually set in options.rpy.
+            if gui.about:
+                text "[gui.about!t]\n"
+
+            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
 
 
 style about_label is gui_label
