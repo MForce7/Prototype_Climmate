@@ -33,6 +33,7 @@ style button_text is gui_text:
     yalign 0.5
 
 
+
 style label_text is gui_text:
     properties gui.text_properties("label", accent=True)
 
@@ -287,42 +288,39 @@ style quick_button_text:
 
 screen navigation():
     
-    vbox:
-        xalign 0.5
-        style_prefix "navigation"
+    if main_menu:
         
-        if main_menu:
+        imagebutton:
+            idle "images/Buttons/menu_button_5.png" 
+            hover "images/Buttons/menu_button_5.png" at button_effect
+            ypos 600 xalign 0.5
+            action Start()
+    else:        
+        imagebutton:
+            idle "images/Buttons/menu_button_1.png"
+            hover "images/Buttons/menu_button_1.png"at button_effect
+            xalign 0.5 ypos 150
             
-            imagebutton:
-                idle "images/Buttons/Continue.png" 
-                hover "images/Buttons/Continue.png" at button_effect
-                ypos 600
-                action Start()
-        else:        
-            imagebutton:
-                idle "images/Buttons/Continue.png"
-                hover "images/Buttons/Continue.png"at button_effect
-                ypos 200
-                
-                action Continue()
-            imagebutton:
-                idle "images/Buttons/main_menu.png"
-                hover "images/Buttons/main_menu.png" at button_effect
-                ypos 400
-                
-                action MainMenu()
-            imagebutton:
-                idle "images/Buttons/preference.png"
-                hover "images/Buttons/preference.pngpng" at button_effect
-                ypos 600
-                
-                action ShowMenu("preferences")
-            imagebutton:
-                idle "images/Buttons/check_my_backpack.png"
-                hover "images/Buttons/check_my_backpack.png" at button_effect
-                ypos 800
-                
-                action [ToggleVariable("state_"), ToggleVariable("sate")]
+            action Continue()
+        imagebutton:
+            idle "images/Buttons/menu_button_2.png"
+            hover "images/Buttons/menu_button_2.png" at button_effect
+            xalign 0.5 ypos 350
+            
+            action MainMenu()
+        imagebutton:
+            idle "images/Buttons/menu_button_3.png"
+            hover "images/Buttons/menu_button_3.png" at button_effect
+            xalign 0.5 ypos 550
+            
+            action ShowMenu("preferences")
+        imagebutton:
+            idle "images/Buttons/menu_button_4.png"
+            hover "images/Buttons/menu_button_4.png" at button_effect
+            xalign 0.5 ypos 750
+            
+            action [ToggleVariable("state_"), ToggleVariable("sate")]
+
 
 """
         xpos gui.navigation_xpos
@@ -509,7 +507,7 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
 
         action Return()
 
-    label title
+    
 
     if main_menu:
         key "game_menu" action ShowMenu("main_menu")
@@ -522,17 +520,9 @@ style game_menu_viewport is gui_viewport
 style game_menu_side is gui_side
 style game_menu_scrollbar is gui_vscrollbar
 
-style game_menu_label is gui_label
-style game_menu_label_text is gui_label_text
-
 style return_button is navigation_button
 style return_button_text is navigation_button_text
 
-style game_menu_outer_frame:
-    bottom_padding 45
-    top_padding 180
-
-    background "gui/overlay/game_menu.png"
 
 style game_menu_navigation_frame:
     xsize 420
@@ -551,15 +541,6 @@ style game_menu_vscrollbar:
 
 style game_menu_side:
     spacing 15
-
-style game_menu_label:
-    xpos 75
-    ysize 180
-
-style game_menu_label_text:
-    size gui.title_text_size
-    color gui.accent_color
-    yalign 0.5
 
 style return_button:
     xpos gui.navigation_xpos
@@ -641,19 +622,22 @@ screen file_slots(title):
             order_reverse True
 
             ## The page name, which can be edited by clicking on a button.
-            button:
-                style "page_label"
+    
+            # button:
+            #     style "page_label"
 
-                key_events True
-                xalign 0.5
-                action page_name_value.Toggle()
+            #     key_events True
+            #     xalign 0.5
+            #     action page_name_value.Toggle()
 
-                input:
-                    style "page_label_text"
-                    value page_name_value
+            #     input:
+            #         style "page_label_text"
+            #         value page_name_value
 
 
 style page_label is gui_label
+
+
 style page_label_text is gui_label_text
 style page_button is gui_button
 style page_button_text is gui_button_text
@@ -667,10 +651,11 @@ style page_label:
     xpadding 75
     ypadding 5
 
-style page_label_text:
-    textalign 0.5
-    layout "subtitle"
-    hover_color gui.hover_color
+
+# style page_label_text:
+#     textalign 0.5
+#     layout "subtitle"
+#     hover_color gui.hover_color
 
 style page_button:
     properties gui.button_properties("page_button")

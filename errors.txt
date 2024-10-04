@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 287: expected statement.
-    butt
-        ^
+File "game/screens.rpy", line 292: expected statement.
+    state2_ = True
+            ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Thu Oct  3 20:11:18 2024
+Fri Oct  4 05:10:51 2024
